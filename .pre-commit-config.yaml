@@ -1,0 +1,28 @@
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    sha: dc50b7f09c9612624c97e7f11fa346937c37f444
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: autopep8-wrapper
+    -   id: check-docstring-first
+    -   id: check-json
+    -   id: check-added-large-files
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: name-tests-test
+    -   id: requirements-txt-fixer
+    -   id: flake8
+-   repo: https://github.com/pre-commit/pre-commit
+    sha: v0.12.2
+    hooks:
+    -   id: validate_config
+    -   id: validate_manifest
+#-   repo: https://github.com/asottile/reorder_python_imports
+#    sha: v0.3.1
+#    hooks:
+#    -   id: reorder-python-imports
+#        language_version: python2.7
+#-   repo: https://github.com/asottile/pyupgrade
+#    sha: v1.0.6
+#    hooks:
+#    -   id: pyupgrade

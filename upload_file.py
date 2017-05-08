@@ -1,9 +1,13 @@
 # coding=utf-8
 import os
-from flask import Flask, url_for, send_from_directory, request
+
+from flask import Flask
+from flask import request
+from flask import send_from_directory
+from flask import url_for
 from werkzeug import secure_filename
 
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = os.getcwd()
